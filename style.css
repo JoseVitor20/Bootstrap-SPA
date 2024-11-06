@@ -1,0 +1,334 @@
+/* ESTILOS GLOBAIS */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }   
+    h1,h2,h3{font-weight: lighter !important;} 
+    p,span{font-weight: 400 !important;}
+
+/* NAVBAR */
+    nav.menu-desktop{
+        width: 100%;
+        background-color: var(--background);
+        position: fixed;
+        z-index: 999;
+    }
+
+/* BANNER */
+    *{
+        div.box{
+            position: relative;
+        }
+
+        section.banner{
+            width: 100%;
+            min-height: 500px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url("assets/PAISAGEM.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        div.chamada-banner{
+            position: relative;
+            z-index: 2;
+            width: 50vmax;
+        }
+
+        div.chamada-banner h2{
+            color: var(--color5);
+            font-size: 8vmin;
+        }
+
+        div.chamada-banner h3{
+            color: var(--color8);
+            font-size:3.5vmin;
+            font-weight: 100;
+        }
+
+        div.chamada-banner button{
+            width: 150px;
+            height: 50px;
+            background-color: var(--button);
+            color: var(--color8);
+        }
+
+        div.overlay{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top:0;
+            position:absolute;
+            background-color: rgba(0, 0, 0, 0.516);
+        }
+
+    }
+    
+/* CADASTRO-LEAD */
+    *{
+        section.cadastro-lead{
+            background-color:var(--background);
+            padding: 20px 0;
+        }
+        
+        section.cadastro-lead input[type=text]{
+            width: 75%;
+            height: 38px;
+            outline:none;
+            border: none;
+            padding-left: 20px;
+            padding-bottom: 2px;
+            border-radius:20px 0px 0px 20px ;
+        }
+
+        section.cadastro-lead button{
+            width: 20%;
+            height: 38px;
+            border:none;
+            border-radius: 0px 20px 20px 0px;
+            background-color: var(--button);
+            margin-left: -5px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--buttonTexto);
+        }
+        
+        section.cadastro-lead button:hover{
+            background-color: var(--buttonEvento);
+            color: var(--buttonEventoTexto);
+        }        
+    }
+
+/* DEPOIMENTOS */
+    *{
+        section.depoimentos h2{color: var(--color1);}
+        
+        section.depoimentos blockquote{
+            border-left: 5px solid var(--background);
+            font-size: 3vmin;
+            padding: 10px 0px;
+            color: var(--color3);
+        }
+    }
+
+/* DIFERENCIAIS */
+    *{
+        section.diferenciais{
+            padding: 30px 0;
+            background-color: var(--color7);
+        }
+
+        section.diferenciais h2{
+            font-size: 5vmin;
+            color: var(--color1);
+        }
+        
+        .diferenciais-container h3, .diferenciais-container i{
+            font-size: 4.4vmin;
+            color: var(--color3);
+        }
+    }
+
+/* EQUIPE */
+    *{
+
+        section.equipe h2{
+            color: var(--color8);
+            font-size: 5vmin;
+            padding: 10px 0px;
+            background-color: var(--background);
+        }
+
+        div.equipe-container{text-align: justify !important;}
+
+        div.border-shadow{box-shadow: 17px 19px 17px -24px rgba(0,0,0,0.85);}
+
+        div.equipe-container h3{font-size: 4vmin;}
+
+        div.equipe-container p{font-size: 2.4vmin;}
+
+        div.equipe-single{
+            width: 100%;
+            padding: 0% 0%;
+            margin: 30px 0px;
+            border-radius: 5px;
+        }
+
+        div.user-picure{
+            width: 100%;
+            padding-top: 100%;
+            border-radius: 100%;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+        div.img-1{background-image: url('./assets/Gentleman.jpg');}
+
+        div.img-2{background-image: url('./assets/Gentleman2.jpg');}
+
+        div.img-3{background-image: url('assets/Gentleman3.jpg');}
+
+        div.img-4{background-image: url('assets/Gentleman4.jpg');}
+
+        @media screen and (max-width:991px) {
+            div.user-picure{
+                width: 20%;
+                padding-top: 20%;
+                position: relative;
+                left: 50%;
+                transform: translatex(-50%);
+            }
+            div.equipe-container{text-align: center !important;}
+        }
+
+    }
+
+/* SESSÃO FINAL */
+    *{
+        /* INSCREVA-SE */
+            section.final-site{background-color: var(--color7);}
+
+            section.final-site h2{
+                color: var(--color8);
+                font-size: 5vmin;
+                padding: 10px 0px;
+                background-color: var(--background);
+                text-align: center;
+            }
+
+            .final-site h3{
+                font-size: 4.5vmin;
+                color: var(--color2);
+            }
+
+            .final-site form{
+                margin-right: 20px;
+            }
+
+            section.final-site label{color: var(--color2);}
+
+            section.final-site textarea, section.final-site input{
+                font-weight: lighter;
+                border: none;
+            }
+
+        /* NOSSOS PLANOS */
+
+            div.nossos-planos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--color6);
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            .tabela{
+                width: 100%;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tabela thead, tbody{
+                min-width: 100%;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            tr{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                text-align: center;
+            }
+
+            th{
+                width: 33.3%;
+                color: var(--color3);
+                font-weight: 400;
+                border: 2px solid wheat;
+                display: flex;
+                justify-content: space-around;
+                font-size: 3vmin;
+            }
+
+            td{
+                width: 33%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                font-size: 2.5vmin;
+                font-weight: bold;
+                color: var(--color2);
+            }
+ 
+            .tabela ul{
+                width: 90%;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .tabela li{
+                font-size: 2vmin;
+                font-weight: lighter;
+            }
+
+            .tabela h6{
+                font-size: 2vmin;
+                text-decoration: line-through;
+                font-weight: lighter;
+                margin-top: -10px;
+            }
+
+            .tabela a{
+                color: var(--color2);
+                text-decoration: none;
+                font-size: 1.8vmin;
+                font-weight: lighter;
+                text-transform: lowercase;
+            }
+
+            .tabela a:hover{
+                text-decoration: underline;
+                color: var(--color3);
+            }
+
+            @media screen and (max-width:991px) {
+                div.nossos-planos{
+                    margin-top: 40px;
+                }
+            }
+
+
+    }
+
+/* FOOTER */
+    *{
+        section.rodapé{
+            background-color: var(--background);
+            color: white;
+        }  
+
+        section.rodapé img{
+            width: 15vmin;
+        }
+
+        section.rodapé a{
+            display: block;
+            color: white;
+        }
+    }

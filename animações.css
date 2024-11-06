@@ -1,0 +1,22 @@
+/* BANNER */
+    div.chamada-banner button:hover {
+        width: 150px;
+        height: 50px;
+        background: linear-gradient(45deg,
+        var(--button),
+        var(--button),
+        var(--button),
+        #005bc5,#01113d,#2d70bd,var(--button),var(--button),var(--button));
+        background-size: 1200% 400%;
+        animation: animate 3s linear alternate infinite;
+        color: var(--color7);
+    }
+    
+    @keyframes animate {
+        0% {
+            background-position: 0% 0%;
+        }
+        100% {
+            background-position: 100% 100%;
+        }
+    }
